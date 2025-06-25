@@ -1,0 +1,133 @@
+*,
+:before,
+:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-inline: 20px;
+  min-height: 100svh;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-cnt {
+  min-width: 280px;
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: hsl(213, 19%, 18%);
+}
+
+#selected-rating-p {
+  background-color: hsl(213, 10%, 21%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  padding: 8px 12px;
+  width: fit-content;
+}
+
+#thanksH1 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#thanks-p {
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+}
+
+.star-icn-cnt {
+  background-color: hsl(213, 10%, 21%);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-cnt h1 {
+  color: hsl(0, 100%, 100%);
+}
+
+.ratings-cnt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(213, 10%, 21%);
+  width: 50px;
+  height: 50px;
+}
+
+.rating {
+  font-weight: 600;
+}
+
+.rating:hover {
+  color: hsl(213, 19%, 18%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+.selected-rating {
+  color: hsl(213, 19%, 18%);
+  background-color: hsl(0, 100%, 100%);
+}
+
+.star-icn-cnt {
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+button,
+.rating {
+  cursor: pointer;
+}
+
+button {
+  font-weight: 800;
+  border: none;
+  border-radius: 20px;
+  color: hsl(213, 19%, 18%);
+  padding-block: 0.8rem;
+  background-color: hsl(25, 97%, 53%);
+}
+
+button:hover {
+  color: hsl(213, 19%, 18%);
+  background-color: hsl(0, 100%, 100%);
+}
+
+@media screen and (max-width: 402px) {
+  .rating {
+    height: 43px;
+    width: 43px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .main-cnt {
+    padding: 1.2rem;
+  }
+
+  .rating {
+    height: 40px;
+    width: 40px;
+  }
+}
